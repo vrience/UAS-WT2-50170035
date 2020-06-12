@@ -4,17 +4,17 @@ import { HttpClient } from "@angular/common/http"
 @Injectable({
     providedIn: "root"
 })
-export class PokemonService {
+export class RamService {
     baseUrl = `https://rickandmortyapi.com/api`;
 
     constructor(private http: HttpClient){
 
     }
-    getPokemons(){
+    getCharacters(){
             return this.http.get(`${this.baseUrl}/character`);
     }
 
-    getPokemon(name: string){
+    getCharacter(name: string){
         return this.http.get(`${this.baseUrl}/character/${name}`);
     }
 }

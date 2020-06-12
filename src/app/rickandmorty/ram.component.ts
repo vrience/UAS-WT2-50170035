@@ -1,25 +1,25 @@
 import { Component, OnInit } from "@angular/core";
-import { PokemonService } from "./pokemon.service";
+import { RamService } from "./ram.service";
 import { BehaviorSubject } from "rxjs";
 
 
 @Component({
-    selector: "ns-pokemons",
-    templateUrl: "./pokemon.component.html"
+    selector: "rs-characters",
+    templateUrl: "./ram.component.html"
 })
-export class PokemonComponent implements OnInit {
-    pokemons = [];
+export class RamComponent implements OnInit {
+    characters = [];
     idxstart = 0;
 
-    constructor(private ps: PokemonService) {
+    constructor(private rs: RamService) {
         // this.pokemons$ = new BehaviorSubject([]);
      }
 
     ngOnInit(): void {
-        this.ps.getPokemons().subscribe((response: any) => {
-          this.pokemons = response.results
+        this.rs.getCharacters().subscribe((response: any) => {
+          this.characters = response.results
         //   response.results ambil data array object results
-          console.log(this.pokemons)
+          console.log(this.characters)
         });
     }
 

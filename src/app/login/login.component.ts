@@ -32,12 +32,12 @@ export class LoginComponent implements OnInit {
 
     ngOnInit() {
         if(this.ls.isLoggedIn())
-            this.router.navigate(["/pokemon"], {clearHistory:true});
+            this.router.navigate(["/character"], {clearHistory:true});
      }
 
     login() {
         if (this.ls.login(this.loginForm.value)) {
-            this.router.navigate(["/pokemon"], { clearHistory:true });
+            this.router.navigate(["/character"], { clearHistory:true });
         } else {
             alert("username or password are wrong");
         }

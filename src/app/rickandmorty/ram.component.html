@@ -2,12 +2,12 @@
 </ActionBar>
 
 <GridLayout>
-    <ListView [items]="pokemons"> 
+    <ListView [items]="characters"> 
         <!-- [items]="pokemons" ambil data variabel pokemon dari ngoninit di component.ts -->
         <ng-template let-item="item">
             <!-- let-item="item" manggil data dalam pokemons sebagai item -->
             <StackLayout>
-                <Label [nsRouterLink]="['/pokemon', item.id]" [text]="item.name"></Label>
+                <Label [nsRouterLink]="['/character', item.id]" [text]="item.name"></Label>
                 <!-- item.name manggil data nama dari array pokemons -->
                 <!-- ['/pokemon', item.name] pindah ke halaman /pokemon dan kirim data nama -->
             </StackLayout>

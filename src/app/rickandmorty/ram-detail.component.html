@@ -1,9 +1,9 @@
-<ActionBar [title]="'Details of ' + pokemon.name"></ActionBar>
+<ActionBar [title]="'Details of ' + character.name"></ActionBar>
 
-<GridLayout rows="auto, auto, auto, " columns=", *" [items]="pokemon">
+<GridLayout rows="auto, auto, auto, " columns=", *" [items]="character">
 
-    <Label [text]="pokemon.name" class="h1 p-l-20" row="0" col="0" colSpan="2"></Label>
-    <Image [src]="pokemon.image" row="1" col="0" backgroundColor="white"></Image>
+    <Label [text]="character.name" class="h1 p-l-20" row="0" col="0" colSpan="2"></Label>
+    <Image [src]="character.image" row="1" col="0" backgroundColor="white"></Image>
 
     <Label text="Stats" class="h1 p-l-20" row="2" col="0" colSpan="2"></Label>
 
@@ -11,22 +11,22 @@
     <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto" columns="*, *" row="3" col="0" colSpan="2"
         backgroundColor="darkslategray" class="p-l-20">
         <Label text="Name" class="font-weight-bold" row="0" col="0"></Label>
-        <Label [text]="pokemon.name" class="text-uppercase" row="0" col="1"></Label>
+        <Label [text]="character.name" class="text-uppercase" row="0" col="1"></Label>
 
         <Label text="Status" class="font-weight-bold" row="1" col="0"></Label>
-        <Label [text]="pokemon.status" row="1" col="1"></Label>
+        <Label [text]="character.status" row="1" col="1"></Label>
 
         <Label text="Species" class="font-weight-bold" row="2" col="0"></Label>
-        <Label [text]="pokemon.species" row="2" col="1"></Label>
+        <Label [text]="character.species" row="2" col="1"></Label>
 
         <Label text="Gender" class="font-weight-bold" row="3" col="0"></Label>
-        <Label [text]="pokemon.gender" row="3" col="1"></Label>
+        <Label [text]="character.gender" row="3" col="1"></Label>
 
         <Label text="Origin" class="font-weight-bold" row="4" col="0"></Label>
-        <Label [text]="pokemon.origin.name" row="4" col="1"></Label>
+        <Label [text]="character.origin.name" row="4" col="1"></Label>
 
         <Label text="Location" class="font-weight-bold" row="5" col="0"></Label>
-        <Label [text]="pokemon.location.name" row="5" col="1" textwrap="true"></Label>
+        <Label [text]="character.location.name" row="5" col="1" textwrap="true"></Label>
 
 
     </GridLayout>

@@ -1,10 +1,11 @@
 <RadSideDrawer tkExampleTitle tkToggleNavButton>
     <GridLayout tkDrawerContent rows="56, *" class="sideStackLayout p-l-25">
         <StackLayout class="sideTitleStackLayout">
-            <Label text="POKEDEX"></Label>
+            <Label text="RICK AND MORTY"></Label>
         </StackLayout>
         <ScrollView row="1">
             <StackLayout class="sideStackLayout">
+                <Label text="ABOUT" [nsRouterLink]="['/about']" class="sideLabel sideLightGrayLabel m-b-10"></Label>
                 <Label text="LOGOUT" (tap)="logout()" class="sideLabel sideLightGrayLabel"></Label>
             </StackLayout>
         </ScrollView>
