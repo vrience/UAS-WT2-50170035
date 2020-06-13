@@ -18,7 +18,6 @@ export class RamComponent implements OnInit {
     ngOnInit(): void {
         this.rs.getCharacters().subscribe((response: any) => {
           this.characters = response.results
-        //   response.results ambil data array object results
           console.log(this.characters)
         });
     }
