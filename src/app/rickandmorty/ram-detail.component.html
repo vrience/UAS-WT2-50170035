@@ -2,7 +2,7 @@
 
 <GridLayout rows="auto, auto, auto, " columns=", *" [items]="character">
 
-    <Label [text]="character.name" class="h1 p-l-20" row="0" col="0" colSpan="2"></Label>
+    <Label [text]="character.name" class="h1 p-l-20" row="0" col="0" colSpan="2" textwrap="true"></Label>
     <Image [src]="character.image" row="1" col="0" backgroundColor="white"></Image>
 
     <Label text="Stats" class="h1 p-l-20" row="2" col="0" colSpan="2"></Label>
