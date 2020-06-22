@@ -12,7 +12,7 @@ export class RamComponent implements OnInit {
     idxstart = 0;
 
     constructor(private rs: RamService) {
-        // this.pokemons$ = new BehaviorSubject([]);
+        // this.characters$ = new BehaviorSubject([]);
      }
 
     ngOnInit(): void {
@@ -24,9 +24,9 @@ export class RamComponent implements OnInit {
 
     loadMore(){
         // this.idxstart+=20;
-        // this.ps.getPokemons(this.idxstart).subscribe((response: any) => {
-        //     this.pokemons.push( ... response.results);
-        //     this.pokemons$.next(this.pokemons);
+        // this.ps.getCharacters(this.idxstart).subscribe((response: any) => {
+        //     this.characters.push( ... response.results);
+        //     this.characters$.next(this.characters);
         //  });
     }
 }
